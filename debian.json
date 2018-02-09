@@ -1,0 +1,15 @@
+{
+    "dest": "release-builds/",
+    "icon": "assets/icons/png/icon.png",
+    "categories": [
+        "Utility",
+        "Calculator"
+    ],
+    "options":{
+        "productName": "Scientific Calculator",
+        "genericName": "Calculator"
+    },
+    "lintianOverrides": [
+        "changelog-file-missing-in-native-package"
+    ]
+}

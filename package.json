@@ -1,0 +1,30 @@
+{
+  "name": "scientific-calculator",
+  "version": "0.0.4",
+  "description": "A minimal scientific calculator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "help": "electron-packager -h",
+    "minifycss": "uglifycss css/calclayout.css --output css/calclayout.min.css",
+    "minifyjs": "uglifyjs js/oscZenoedited.js -c -m -o js/oscZenoedited.min.js",
+    "minify": "npm run minifycss && npm run minifyjs",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . scientific-calculator --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=akr --version-string.FileDescription=akr --version-string.ProductName=\"Scientific Calculator\"",
+    "package-linux": "electron-packager . scientific-calculator --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds",
+    "create-debian-installer": "electron-installer-debian --src release-builds/scientific-calculator-linux-x64/ --arch amd64 --config debian.json"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "Calculator"
+  ],
+  "author": "akr",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.7.11",
+    "electron-packager": "^10.1.1",
+    "uglify-js": "^3.3.8",
+    "uglifycss": "0.0.27"
+  }
+}
