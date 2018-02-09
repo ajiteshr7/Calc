@@ -1,6 +1,6 @@
 {
   "name": "scientific-calculator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A minimal scientific calculator",
   "main": "main.js",
   "scripts": {
@@ -22,9 +22,9 @@
   "author": "akr",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.7.11",
-    "electron-packager": "^10.1.1",
-    "uglify-js": "^3.3.8",
+    "electron": "^1.8.2",
+    "electron-packager": "^10.1.2",
+    "uglify-js": "^3.3.10",
     "uglifycss": "0.0.27"
   }
 }
