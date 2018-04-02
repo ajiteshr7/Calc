@@ -1,1 +1,4 @@
 node_modules
+release-builds/scientific-calculator-linux-x64
+release-builds/scientific-calculator-linux-x64/*
+
